@@ -45,3 +45,26 @@ function warnTheSheep(queue) {
   }
   return "Oi! Sheep number " + (queue.length - index - 1) + "! You are about to be eaten by a wolf!";
 }
+
+// https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+
+function maps(x){
+  const doubleX = x.slice(0);
+  
+  for (i = 0; i <= doubleX.length - 1; i++) {
+    doubleX[i] *= 2;
+  }
+  
+  return doubleX;
+}
+
+// https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive(arr) {
+  for (i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] - arr[i] !== 1) {
+      return arr[i + 1];
+    } 
+  }
+  return null;
+}
