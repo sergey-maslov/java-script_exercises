@@ -22,3 +22,10 @@ var max = function(list){
     list.sort( (a, b) => b - a );
     return list[0];
 }
+
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function min(arr, toReturn) {
+  const minNum = Math.min(...arr);
+  return toReturn === "value" ? minNum : arr.indexOf(minNum);
+}
