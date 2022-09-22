@@ -68,3 +68,18 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
+
+
+// Double Integer    https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+
+function doubleInteger(i) {
+  i *= 2;
+  return i;
+}
+
+// Century From Year    https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+
+function century(year) {
+  const century = Math.ceil(year / 100);
+  return century;
+}
